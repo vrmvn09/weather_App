@@ -6,7 +6,7 @@ const currentWeather = document.querySelector('#currentWeather');
 const forecastContainer = document.querySelector('#forecastContainer');
 const cityName = document.querySelector('#cityName');
 
-const APIkey = '76d3585630d0b881dd2a20623b9df20a';
+const APIkey = 'YOUR_OPENWEATHER_API_KEY';
 
 search.addEventListener('click', () => {
     const city = cityInput.value.trim();
@@ -18,8 +18,8 @@ search.addEventListener('click', () => {
 
 cityInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
-        event.preventDefault(); // предотвращает стандартное поведение формы
-        search.click(); // симулирует нажатие кнопки "Search"
+        event.preventDefault(); 
+        search.click(); 
     }
 });
 
